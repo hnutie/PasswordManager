@@ -78,7 +78,7 @@ def find_password():
                 email = data[search_entry]["email"]
                 password = data[search_entry]["password"]
             except KeyError:
-                messagebox.showinfo(title="Oops", message="No details for the website exists!")
+                messagebox.showinfo(title="Oops", message="No details for the {search_entry.capitalize()} exists!")
             else:
                 pyperclip.copy(password)
                 messagebox.showinfo(title=search_entry, message=f"Email: {email}\nPassword: {password}\n"
