@@ -81,7 +81,7 @@ def find_password():
                 messagebox.showinfo(title="Oops", message="No details for the website exists!")
             else:
                 pyperclip.copy(password)
-                messagebox.showinfo(title=search_entry, message=f"Email: {email}/nPassword: {password}/n "
+                messagebox.showinfo(title=search_entry, message=f"Email: {email}\nPassword: {password}\n"
                                                                 f"Password copied to clipboard.")
 
 
@@ -114,7 +114,7 @@ website_entry.grid(row=2, column=1)
 website_entry.focus()
 email_entry = Entry(width=60)
 email_entry.grid(row=3, column=1, columnspan=2)
-email_entry.insert(0, "grzeszczuk.adam@gmail.com")
+
 password_entry = Entry(width=38)
 password_entry.grid(row=4, column=1)
 
